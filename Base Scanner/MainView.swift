@@ -97,7 +97,7 @@ struct MainView: View {
                 
                 
             }
-            .navigationTitle("Base Conversion")
+            .navigationTitle("Base Scan")
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .sheet(isPresented: $showingScanningView, content: {
