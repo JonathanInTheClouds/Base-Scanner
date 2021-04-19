@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		24B23553262D00A900AC8490 /* Binary_ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23552262D00A900AC8490 /* Binary_ScannerApp.swift */; };
-		24B23555262D00A900AC8490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23554262D00A900AC8490 /* ContentView.swift */; };
 		24B23557262D00A900AC8490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B23556262D00A900AC8490 /* Assets.xcassets */; };
 		24B2355A262D00A900AC8490 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B23559262D00A900AC8490 /* Preview Assets.xcassets */; };
 		24B2355C262D00A900AC8490 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B2355B262D00A900AC8490 /* Persistence.swift */; };
 		24B2355F262D00A900AC8490 /* Binary_Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24B2355D262D00A900AC8490 /* Binary_Scanner.xcdatamodeld */; };
 		24B2356A262D00A900AC8490 /* Binary_ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23569262D00A900AC8490 /* Binary_ScannerTests.swift */; };
 		24B23575262D00A900AC8490 /* Binary_ScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23574262D00A900AC8490 /* Binary_ScannerUITests.swift */; };
+		24B23591262D014C00AC8490 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23590262D014C00AC8490 /* MainView.swift */; };
+		24B23596262D01E000AC8490 /* ScanDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23595262D01E000AC8490 /* ScanDocumentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		24B2354F262D00A900AC8490 /* Binary Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B23552262D00A900AC8490 /* Binary_ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_ScannerApp.swift; sourceTree = "<group>"; };
-		24B23554262D00A900AC8490 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		24B23556262D00A900AC8490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B23559262D00A900AC8490 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24B2355B262D00A900AC8490 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		24B23570262D00A900AC8490 /* Binary ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B23574262D00A900AC8490 /* Binary_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_ScannerUITests.swift; sourceTree = "<group>"; };
 		24B23576262D00A900AC8490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B23590262D014C00AC8490 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		24B23595262D01E000AC8490 /* ScanDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocumentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				24B23552262D00A900AC8490 /* Binary_ScannerApp.swift */,
-				24B23554262D00A900AC8490 /* ContentView.swift */,
+				24B23590262D014C00AC8490 /* MainView.swift */,
+				24B23595262D01E000AC8490 /* ScanDocumentView.swift */,
 				24B23556262D00A900AC8490 /* Assets.xcassets */,
 				24B2355B262D00A900AC8490 /* Persistence.swift */,
 				24B23560262D00A900AC8490 /* Info.plist */,
@@ -266,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24B2355C262D00A900AC8490 /* Persistence.swift in Sources */,
+				24B23591262D014C00AC8490 /* MainView.swift in Sources */,
 				24B2355F262D00A900AC8490 /* Binary_Scanner.xcdatamodeld in Sources */,
-				24B23555262D00A900AC8490 /* ContentView.swift in Sources */,
+				24B23596262D01E000AC8490 /* ScanDocumentView.swift in Sources */,
 				24B23553262D00A900AC8490 /* Binary_ScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
