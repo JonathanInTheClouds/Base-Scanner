@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import BigNumber
+import MobileCoreServices
 
 struct MainView: View {
     
@@ -17,6 +19,8 @@ struct MainView: View {
     
     @State private var toBase = ""
     @State private var toNumber = ""
+    
+    private let generator = UIImpactFeedbackGenerator(style: .light)
     
     var body: some View {
         NavigationView {
@@ -71,9 +75,20 @@ struct MainView: View {
                 if !toNumber.isEmpty {
                     Section {
                         Text(toNumber)
-                            .font(.title3)
+                            .font(.title)
                             .bold()
+                            .onTapGesture(perform: copyToClipboard)
                     }
+                    .contextMenu(ContextMenu(menuItems: {
+                        Button(action: copyToClipboard, label: {
+                            Text("Copy")
+                        })
+                        
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Text("Copy To From")
+                        })
+                    }))
+                    
                 }
                 
                 
@@ -91,9 +106,22 @@ struct MainView: View {
         else { return }
         
         if (1...36 ~= fromBase) && (1...36 ~= toBase) {
-            guard let fromValue = Int(fromNumber.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters).replacingOccurrences(of: ",", with: ""), radix: fromBase) else { return }
-            toNumber = String(fromValue, radix: toBase)
+        
+            if String(Int.max).count >= fromNumber.count {
+                guard let fromValue = Int(fromNumber.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters).replacingOccurrences(of: ",", with: ""), radix: fromBase) else { return }
+                toNumber = String(fromValue, radix: toBase).uppercased()
+            } else {
+                guard let num = BInt(fromNumber, radix: fromBase) else { return }
+                print(num)
+                toNumber = String(num, radix: toBase).uppercased()
+            }
+            
         }
+    }
+    
+    fileprivate func copyToClipboard() {
+        UIPasteboard.general.string = toNumber
+        generator.impactOccurred()
     }
 }
 

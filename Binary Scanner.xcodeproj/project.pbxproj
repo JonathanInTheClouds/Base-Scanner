@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241762C3262D3E8200DA3DEE /* BigNumber in Frameworks */ = {isa = PBXBuildFile; productRef = 241762C2262D3E8200DA3DEE /* BigNumber */; };
 		24B23553262D00A900AC8490 /* Binary_ScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B23552262D00A900AC8490 /* Binary_ScannerApp.swift */; };
 		24B23557262D00A900AC8490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B23556262D00A900AC8490 /* Assets.xcassets */; };
 		24B2355A262D00A900AC8490 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B23559262D00A900AC8490 /* Preview Assets.xcassets */; };
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241762C3262D3E8200DA3DEE /* BigNumber in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +157,9 @@
 			dependencies = (
 			);
 			name = "Binary Scanner";
+			packageProductDependencies = (
+				241762C2262D3E8200DA3DEE /* BigNumber */,
+			);
 			productName = "Binary Scanner";
 			productReference = 24B2354F262D00A900AC8490 /* Binary Scanner.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 24B23546262D00A900AC8490;
+			packageReferences = (
+				241762C1262D3E8200DA3DEE /* XCRemoteSwiftPackageReference "Swift-BigInt" */,
+			);
 			productRefGroup = 24B23550262D00A900AC8490 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -592,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		241762C1262D3E8200DA3DEE /* XCRemoteSwiftPackageReference "Swift-BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mkrd/Swift-BigInt.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		241762C2262D3E8200DA3DEE /* BigNumber */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 241762C1262D3E8200DA3DEE /* XCRemoteSwiftPackageReference "Swift-BigInt" */;
+			productName = BigNumber;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		24B2355D262D00A900AC8490 /* Binary_Scanner.xcdatamodeld */ = {
