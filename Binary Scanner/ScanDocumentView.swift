@@ -13,6 +13,8 @@ struct ScanDocumentView: UIViewControllerRepresentable {
     
     @Binding var recognizedText: String
     
+    @Environment(\.presentationMode) var presentationMOde
+    
     func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
         let docViewController = VNDocumentCameraViewController()
         docViewController.delegate = context.coordinator
@@ -38,7 +40,10 @@ struct ScanDocumentView: UIViewControllerRepresentable {
         }
         
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
-            
+            let extractedImages = extractImages(from: scan)
+            let processedText = recognizedText(from: extractedImages)
+            recognizedText.wrappedValue = processedText
+            parent.presentationMOde.wrappedValue.dismiss()
         }
         
         fileprivate func extractImages(from scan: VNDocumentCameraScan) -> [CGImage] {
