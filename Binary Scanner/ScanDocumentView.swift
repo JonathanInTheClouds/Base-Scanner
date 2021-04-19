@@ -67,7 +67,7 @@ struct ScanDocumentView: UIViewControllerRepresentable {
                 for observation in observations {
                     guard let candidate = observation.topCandidates(maximumRecognitionCandidates).first else { return }
                     
-                    extireRecognizedText += "\(candidate.string)\n"
+                    extireRecognizedText += "\(candidate.string)"
                 }
             }
             
