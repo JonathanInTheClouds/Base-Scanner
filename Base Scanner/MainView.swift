@@ -66,7 +66,7 @@ struct MainView: View {
                             HStack {
                                 Text("Convert")
                                 Spacer()
-                                Image(systemName: "square.fill.and.line.vertical.and.square")
+                                Image(systemName: "square.and.line.vertical.and.square.fill")
                             }
                         })
                     }
@@ -84,7 +84,7 @@ struct MainView: View {
                             Text("Copy")
                         })
                         
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Button(action: copyToFrom, label: {
                             Text("Copy To From")
                         })
                     }))
@@ -95,6 +95,7 @@ struct MainView: View {
             }
             .navigationTitle("Base Conversion")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .sheet(isPresented: $showingScanningView, content: {
             ScanDocumentView(recognizedText: $fromNumber)
         })
@@ -122,6 +123,11 @@ struct MainView: View {
     fileprivate func copyToClipboard() {
         UIPasteboard.general.string = toNumber
         generator.impactOccurred()
+    }
+    
+    fileprivate func copyToFrom() {
+        fromBase = toBase
+        fromNumber = toNumber
     }
 }
 
