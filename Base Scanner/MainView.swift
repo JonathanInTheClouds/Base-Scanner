@@ -29,8 +29,9 @@ struct MainView: View {
                     HStack {
                         Text("Base")
                         
-                        TextField("1-36", text: $fromBase)
+                        TextField("2-36", text: $fromBase)
                             .multilineTextAlignment(.trailing)
+                            .keyboardType(.decimalPad)
                     }
                     
                     HStack {
@@ -59,8 +60,9 @@ struct MainView: View {
                     HStack {
                         Text("Base")
                         
-                        TextField("1-36", text: $toBase)
+                        TextField("2-36", text: $toBase)
                             .multilineTextAlignment(.trailing)
+                            .keyboardType(.decimalPad)
                     }
                     
                     HStack {
@@ -108,7 +110,7 @@ struct MainView: View {
               let toBase = Int(toBase)
         else { return }
         
-        if (1...36 ~= fromBase) && (1...36 ~= toBase) {
+        if (2...36 ~= fromBase) && (2...36 ~= toBase) {
         
             if String(Int.max).count >= fromNumber.count {
                 guard let fromValue = Int(fromNumber.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters).replacingOccurrences(of: ",", with: ""), radix: fromBase) else { return }
