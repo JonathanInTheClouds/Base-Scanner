@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24B2354E262D00A900AC8490"
-               BuildableName = "Base Scanner.app"
-               BlueprintName = "Base Scanner"
-               ReferencedContainer = "container:Base Scanner.xcodeproj">
+               BuildableName = "Base Scan.app"
+               BlueprintName = "Base Scan"
+               ReferencedContainer = "container:Base Scan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24B23564262D00A900AC8490"
-               BuildableName = "Base ScannerTests.xctest"
-               BlueprintName = "Base ScannerTests"
-               ReferencedContainer = "container:Base Scanner.xcodeproj">
+               BuildableName = "Base ScanTests.xctest"
+               BlueprintName = "Base ScanTests"
+               ReferencedContainer = "container:Base Scan.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "24B2356F262D00A900AC8490"
-               BuildableName = "Base ScannerUITests.xctest"
-               BlueprintName = "Base ScannerUITests"
-               ReferencedContainer = "container:Base Scanner.xcodeproj">
+               BuildableName = "Base ScanUITests.xctest"
+               BlueprintName = "Base ScanUITests"
+               ReferencedContainer = "container:Base Scan.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24B2354E262D00A900AC8490"
-            BuildableName = "Base Scanner.app"
-            BlueprintName = "Base Scanner"
-            ReferencedContainer = "container:Base Scanner.xcodeproj">
+            BuildableName = "Base Scan.app"
+            BlueprintName = "Base Scan"
+            ReferencedContainer = "container:Base Scan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "24B2354E262D00A900AC8490"
-            BuildableName = "Base Scanner.app"
-            BlueprintName = "Base Scanner"
-            ReferencedContainer = "container:Base Scanner.xcodeproj">
+            BuildableName = "Base Scan.app"
+            BlueprintName = "Base Scan"
+            ReferencedContainer = "container:Base Scan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

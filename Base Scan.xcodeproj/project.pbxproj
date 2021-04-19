@@ -37,17 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24B2354F262D00A900AC8490 /* Base Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B2354F262D00A900AC8490 /* Base Scan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base Scan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B23552262D00A900AC8490 /* Base_ScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_ScannerApp.swift; sourceTree = "<group>"; };
 		24B23556262D00A900AC8490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B23559262D00A900AC8490 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24B2355B262D00A900AC8490 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		24B2355E262D00A900AC8490 /* Binary_Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Binary_Scanner.xcdatamodel; sourceTree = "<group>"; };
 		24B23560262D00A900AC8490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24B23565262D00A900AC8490 /* Base ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B23565262D00A900AC8490 /* Base ScanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base ScanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B23569262D00A900AC8490 /* Base_ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_ScannerTests.swift; sourceTree = "<group>"; };
 		24B2356B262D00A900AC8490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24B23570262D00A900AC8490 /* Base ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B23570262D00A900AC8490 /* Base ScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Base ScanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B23574262D00A900AC8490 /* Base_ScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_ScannerUITests.swift; sourceTree = "<group>"; };
 		24B23576262D00A900AC8490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24B23590262D014C00AC8490 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		24B23550262D00A900AC8490 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24B2354F262D00A900AC8490 /* Base Scanner.app */,
-				24B23565262D00A900AC8490 /* Base ScannerTests.xctest */,
-				24B23570262D00A900AC8490 /* Base ScannerUITests.xctest */,
+				24B2354F262D00A900AC8490 /* Base Scan.app */,
+				24B23565262D00A900AC8490 /* Base ScanTests.xctest */,
+				24B23570262D00A900AC8490 /* Base ScanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,9 +144,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24B2354E262D00A900AC8490 /* Base Scanner */ = {
+		24B2354E262D00A900AC8490 /* Base Scan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24B23579262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base Scanner" */;
+			buildConfigurationList = 24B23579262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base Scan" */;
 			buildPhases = (
 				24B2354B262D00A900AC8490 /* Sources */,
 				24B2354C262D00A900AC8490 /* Frameworks */,
@@ -156,17 +156,17 @@
 			);
 			dependencies = (
 			);
-			name = "Base Scanner";
+			name = "Base Scan";
 			packageProductDependencies = (
 				241762C2262D3E8200DA3DEE /* BigNumber */,
 			);
 			productName = "Binary Scanner";
-			productReference = 24B2354F262D00A900AC8490 /* Base Scanner.app */;
+			productReference = 24B2354F262D00A900AC8490 /* Base Scan.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24B23564262D00A900AC8490 /* Base ScannerTests */ = {
+		24B23564262D00A900AC8490 /* Base ScanTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24B2357C262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScannerTests" */;
+			buildConfigurationList = 24B2357C262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScanTests" */;
 			buildPhases = (
 				24B23561262D00A900AC8490 /* Sources */,
 				24B23562262D00A900AC8490 /* Frameworks */,
@@ -177,14 +177,14 @@
 			dependencies = (
 				24B23567262D00A900AC8490 /* PBXTargetDependency */,
 			);
-			name = "Base ScannerTests";
+			name = "Base ScanTests";
 			productName = "Binary ScannerTests";
-			productReference = 24B23565262D00A900AC8490 /* Base ScannerTests.xctest */;
+			productReference = 24B23565262D00A900AC8490 /* Base ScanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		24B2356F262D00A900AC8490 /* Base ScannerUITests */ = {
+		24B2356F262D00A900AC8490 /* Base ScanUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24B2357F262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScannerUITests" */;
+			buildConfigurationList = 24B2357F262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScanUITests" */;
 			buildPhases = (
 				24B2356C262D00A900AC8490 /* Sources */,
 				24B2356D262D00A900AC8490 /* Frameworks */,
@@ -195,9 +195,9 @@
 			dependencies = (
 				24B23572262D00A900AC8490 /* PBXTargetDependency */,
 			);
-			name = "Base ScannerUITests";
+			name = "Base ScanUITests";
 			productName = "Binary ScannerUITests";
-			productReference = 24B23570262D00A900AC8490 /* Base ScannerUITests.xctest */;
+			productReference = 24B23570262D00A900AC8490 /* Base ScanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24B2354A262D00A900AC8490 /* Build configuration list for PBXProject "Base Scanner" */;
+			buildConfigurationList = 24B2354A262D00A900AC8490 /* Build configuration list for PBXProject "Base Scan" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24B2354E262D00A900AC8490 /* Base Scanner */,
-				24B23564262D00A900AC8490 /* Base ScannerTests */,
-				24B2356F262D00A900AC8490 /* Base ScannerUITests */,
+				24B2354E262D00A900AC8490 /* Base Scan */,
+				24B23564262D00A900AC8490 /* Base ScanTests */,
+				24B2356F262D00A900AC8490 /* Base ScanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -305,12 +305,12 @@
 /* Begin PBXTargetDependency section */
 		24B23567262D00A900AC8490 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24B2354E262D00A900AC8490 /* Base Scanner */;
+			target = 24B2354E262D00A900AC8490 /* Base Scan */;
 			targetProxy = 24B23566262D00A900AC8490 /* PBXContainerItemProxy */;
 		};
 		24B23572262D00A900AC8490 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24B2354E262D00A900AC8490 /* Base Scanner */;
+			target = 24B2354E262D00A900AC8490 /* Base Scan */;
 			targetProxy = 24B23571262D00A900AC8490 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -494,7 +494,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Base Scanner.app/Base Scanner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Base Scan.app/Base Scan";
 			};
 			name = Debug;
 		};
@@ -516,7 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Base Scanner.app/Base Scanner";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Base Scan.app/Base Scan";
 			};
 			name = Release;
 		};
@@ -563,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24B2354A262D00A900AC8490 /* Build configuration list for PBXProject "Base Scanner" */ = {
+		24B2354A262D00A900AC8490 /* Build configuration list for PBXProject "Base Scan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24B23577262D00A900AC8490 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24B23579262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base Scanner" */ = {
+		24B23579262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base Scan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24B2357A262D00A900AC8490 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24B2357C262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScannerTests" */ = {
+		24B2357C262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24B2357D262D00A900AC8490 /* Debug */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24B2357F262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScannerUITests" */ = {
+		24B2357F262D00A900AC8490 /* Build configuration list for PBXNativeTarget "Base ScanUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24B23580262D00A900AC8490 /* Debug */,
