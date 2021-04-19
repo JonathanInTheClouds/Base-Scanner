@@ -35,8 +35,10 @@ struct MainView: View {
                     
                     HStack {
                         Text("Value")
+                            .foregroundColor((fromBase == "2") && (fromNumber.count > 63) ? .red : .none)
                         TextField("Number", text: $fromNumber)
                             .multilineTextAlignment(.trailing)
+                            .foregroundColor((fromBase == "2") && (fromNumber.count > 63) ? .red : .none)
                     }
                     
                     HStack {
@@ -113,7 +115,6 @@ struct MainView: View {
                 toNumber = String(fromValue, radix: toBase).uppercased()
             } else {
                 guard let num = BInt(fromNumber, radix: fromBase) else { return }
-                print(num)
                 toNumber = String(num, radix: toBase).uppercased()
             }
             
