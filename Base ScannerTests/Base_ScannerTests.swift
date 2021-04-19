@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Binary_Scanner
+@testable import Base_Scanner
 
 class Base_ScannerTests: XCTestCase {
 
