@@ -7,18 +7,19 @@
 
 import SwiftUI
 import BigNumber
-import MobileCoreServices
+
 
 struct MainView: View {
     
     @State private var showingScanningView = false
-    @State private var recognizedText = ""
     
     @State private var fromBase = ""
     @State private var fromNumber = ""
     
     @State private var toBase = ""
     @State private var toNumber = ""
+    
+    @ObservedObject private var baseConverter = BaseConverter()
     
     private let generator = UIImpactFeedbackGenerator(style: .light)
     
@@ -106,21 +107,8 @@ struct MainView: View {
     }
     
     fileprivate func convertBase() {
-        guard let fromBase = Int(fromBase),
-              let toBase = Int(toBase)
-        else { return }
-        
-        if (2...36 ~= fromBase) && (2...36 ~= toBase) {
-        
-            if String(Int.max).count >= fromNumber.count {
-                guard let fromValue = Int(fromNumber.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: .punctuationCharacters).replacingOccurrences(of: ",", with: ""), radix: fromBase) else { return }
-                toNumber = String(fromValue, radix: toBase).uppercased()
-            } else {
-                guard let num = BInt(fromNumber, radix: fromBase) else { return }
-                toNumber = String(num, radix: toBase).uppercased()
-            }
-            
-        }
+        guard let conversion = baseConverter.convert(fromBase: fromBase, fromNumber: fromNumber, toBase: toBase) else { return }
+        toNumber = conversion
     }
     
     fileprivate func copyToClipboard() {

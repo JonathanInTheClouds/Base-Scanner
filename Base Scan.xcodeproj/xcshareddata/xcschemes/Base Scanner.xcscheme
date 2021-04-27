@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24B23564262D00A900AC8490"
+               BlueprintIdentifier = "247DB1FD26366A97008A8F05"
                BuildableName = "Base ScanTests.xctest"
                BlueprintName = "Base ScanTests"
                ReferencedContainer = "container:Base Scan.xcodeproj">
@@ -45,6 +45,26 @@
                BlueprintIdentifier = "24B2356F262D00A900AC8490"
                BuildableName = "Base ScanUITests.xctest"
                BlueprintName = "Base ScanUITests"
+               ReferencedContainer = "container:Base Scan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2412FC2226366A7800367B02"
+               BuildableName = "Base Scan UTests.xctest"
+               BlueprintName = "Base Scan UTests"
+               ReferencedContainer = "container:Base Scan.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "24E1011926366B1900B12727"
+               BuildableName = "Test.xctest"
+               BlueprintName = "Test"
                ReferencedContainer = "container:Base Scan.xcodeproj">
             </BuildableReference>
          </TestableReference>
