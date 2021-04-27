@@ -40,6 +40,7 @@ struct MainView: View {
                             .foregroundColor((fromBase == "2") && (fromNumber.count > 63) ? .red : .none)
                         TextField("Number", text: $fromNumber)
                             .multilineTextAlignment(.trailing)
+                            .keyboardType(chooseKeyboardType(fromBase: fromBase))
                             .foregroundColor((fromBase == "2") && (fromNumber.count > 63) ? .red : .none)
                     }
                     
@@ -119,6 +120,15 @@ struct MainView: View {
     fileprivate func copyToFrom() {
         fromBase = toBase
         fromNumber = toNumber
+    }
+    
+    fileprivate func chooseKeyboardType(fromBase: String) -> UIKeyboardType {
+        guard let fromBase = Int(fromBase) else { return .default }
+        if fromBase < 11 {
+            return .decimalPad
+        } else {
+            return .default
+        }
     }
 }
 
